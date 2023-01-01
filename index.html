@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">  
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/CLARUSWAY_LOGO.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#students">Student</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+
+    <div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/slider1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Popular Education</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ABOUT-US -->
+
+    <main >
+      <section id="about" class="container" class="mb-4">
+        <h2 class="display-3 text-danger text-center border-bottom border-danger">ABOUT US</h2>
+        <div class="row justify-content-center text-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-globe-americas fa-2x">Lorem ipsum dolor sit amet.</i>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, accusantium aut distinctio facere est voluptates consectetur iste eius ea quidem.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-globe-americas fa-2x">Lorem ipsum dolor sit amet.</i>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, accusantium aut distinctio facere est voluptates consectetur iste eius ea quidem.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-globe-americas fa-2x">Lorem ipsum dolor sit amet.</i>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, accusantium aut distinctio facere est voluptates consectetur iste eius ea quidem.</p>
+          </div>
+        </div>
+       
+      <!-- </section>
+
+      INSTRUCTOR
+      <section id="instructor"> -->
+        
+<!-- 
+      </section>
+
+      STUDENTS -->
+      <!-- <section id="students">
+
+      </section> -->
+      <!-- COURSES -->
+      <section id="courses" class="my-4">
+        <h2 class="display-4 text-warning text-bold my-2 border-bottom border-danger">COURSES</h2>
+        <div class="row justify-content-center text-left">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <button type="button" class="btn btn-info mb-1 text-white btn-lg w-50">AWS</button>
+            <i class="fas fa-globe-americas fa-2x">Lorem ipsum dolor sit amet.</i>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, accusantium aut distinctio facere est voluptates consectetur iste eius ea quidem.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <button type="button" class="btn btn-primary mb-1 btn-lg w-50">Data Science</button>
+            <i class="fas fa-globe-americas fa-2x">Lorem ipsum dolor sit amet.</i>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, accusantium aut distinctio facere est voluptates consectetur iste eius ea quidem.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <button type="button" class="btn btn-success mb-1 btn-lg w-50">Full Stack</button>
+            <i class="fas fa-globe-americas fa-2x">Lorem ipsum dolor sit amet.</i>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, accusantium aut distinctio facere est voluptates consectetur iste eius ea quidem.</p>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact" class="mb-4">
+        <h2 class="display-3 text-center text-danger border-bottom border-danger">Contact</h2>
+        <div class="row justify-content-between text-center">
+          <div class="card col-sm-12 col-md-6 col-lg-4 m-1 w-25">
+            
+            <i class="fa-regular fa-map fa-3x text-danger my-2"></i>
+            <h4 class="my-2" >Address</h4>
+            
+
+            <p class="my-2">1775 Tysons Blvd 5th Floor Tysons, VA 22102</p>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-4 m-1 w-25">
+            
+            <i class="fa-solid fa-phone fa-3x text-danger my-2 "></i>
+            <h4 class="btn my-2" >Phone</h4>
+            
+
+            <p class="my-2">1775 Tysons Blvd 5th Floor Tysons, VA 22102</p>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-4 m-1 w-25">
+            
+            <i class="fa-regular fa-envelope-open fa-3x text-danger my-2 "></i>
+            <h4 class="btn my-2" >Email</h4>
+            
+
+            <p class="my-2">1775 Tysons Blvd 5th Floor Tysons, VA 22102</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="navbar   bg-body-tertiary  mt-5">
+      <div class="container-fluid mx-auto ">
+        <a class="navbar-brand mx-auto " href="#">Clarusway</a>
+      </div>
+    </footer>
+    <!-- UP-BTN -->
+
+    <!-- SCRIPTS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./lib/fslightbox.js"></script>
+  </body>
+</html>
